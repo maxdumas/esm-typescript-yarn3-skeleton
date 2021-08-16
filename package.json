@@ -1,0 +1,11 @@
+{
+  "name": "binance-to-lunch-money",
+  "packageManager": "yarn@3.0.1",
+  "author": {
+    "name": "Max Dumas",
+    "email": "maltor124@gmail.com"
+  },
+  "bugs": "https://github.com/maxdumas/binance-to-lunch-money/issues",
+  "homepage": "https://github.com/maxdumas/binance-to-lunch-money#README",
+  "version": "1.0.0"
+}
