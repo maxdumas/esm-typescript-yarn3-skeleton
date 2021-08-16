@@ -1,12 +1,13 @@
 {
-  "name": "binance-to-lunch-money",
+  "name": "esm-typescript-yarn3-skeleton",
+  "private": true,
   "packageManager": "yarn@3.0.1",
   "author": {
     "name": "Max Dumas",
     "email": "maltor124@gmail.com"
   },
-  "bugs": "https://github.com/maxdumas/binance-to-lunch-money/issues",
-  "homepage": "https://github.com/maxdumas/binance-to-lunch-money#README",
+  "bugs": "https://github.com/maxdumas/esm-typescript-yarn3-skeleton/issues",
+  "homepage": "https://github.com/maxdumas/esm-typescript-yarn3-skeleton#README",
   "version": "1.0.0",
   "license": "MIT",
   "keywords": [
@@ -15,5 +16,26 @@
     "budgeting"
   ],
   "description": "A wrapper around the Binance API for enabling Lunch Money to gather information about a user's account.",
-  "repository": "github:maxdumas/binance-to-lunch-money"
+  "repository": "github:maxdumas/binance-to-lunch-money",
+  "main": "./dist/main.js",
+  "exports": {
+    ".": "./dist/main.js"
+  },
+  "typesVersions": {
+    "*": {
+      "main.d.ts": [
+        "dist/main.d.ts"
+      ]
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  }
 }
